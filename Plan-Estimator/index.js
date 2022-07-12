@@ -18,8 +18,9 @@ function calc() {
     tisch.push(temp);
     temp = temp + hourlyGoal;
   }
-  tisch.push(temp);
+  
   yValuesP1.unshift(0);
+  tisch.push(temp-hourlyGoal);
   
   for (let i = 0; i < 4; i++) {
     
@@ -28,7 +29,7 @@ function calc() {
     tisch.push(temp);
     temp = temp + hourlyGoal;
   }
-  tisch.push(temp);
+  tisch.push(temp-hourlyGoal);
   yValuesP2.unshift(null,null,null,null,yValuesP1[3]);
   yValuesP2[8] = yValuesP2[8] - halfHour;
 
@@ -37,6 +38,7 @@ function calc() {
     tisch.push(temp);
     temp = temp + halfHour;
     }
+    
 
   yValuesP3.unshift(null,null,null,null,null,null,null,null,null,yValuesP2[8]);
   yValuesP3[10] = yValuesP3[10] - halfHour;
@@ -71,6 +73,14 @@ function calc() {
     }]
   },
   options: {
+    tooltips:{
+      mode: 'index',
+      intersect: false
+    },
+    hover:{
+      mode: 'index',
+      intersect: false
+    },
     legend: {display: true},
     scales: {
         yAxes:[{ticks: {min: 0, max: temp + 1000}}]
