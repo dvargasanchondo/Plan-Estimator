@@ -1,4 +1,5 @@
 function calc() {
+  
   var vendor = document.getElementById('vGoal').value;
   hourlyGoal= Math.round(vendor/9.5);
   
@@ -44,8 +45,10 @@ function calc() {
   //document.getElementById("test").innerHTML = tisch.toString();
 
 
-
-new Chart("myChart", {
+  if (this.chart && this.chart != null) {
+    this.chart.destroy()
+  }
+ this.chart = new Chart("myChart", {
   type: "line",
   data: {
     labels: xValues,
