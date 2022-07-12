@@ -1,0 +1,33 @@
+.logo {
+    width: 8%;
+    margin: 20px;
+    will-change: filter;
+    transition: filter .2s ease-out;
+}
+.logo:hover {
+    filter: drop-shadow(3px 2px 2px #333);
+  }
+
+  .input{
+      border-radius: 5px;
+      margin: 5px;
+      width: 100%;
+  }
+
+  .col-6{
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+  }
+
+  #dvTable{
+      width: 200px;
+  }
+
+  #myChart{
+      max-height: 40vh ;
+  }
+
+  .hr {
+      color: rgb(148, 148, 148);
+      margin-bottom: 20vh;
+  }
