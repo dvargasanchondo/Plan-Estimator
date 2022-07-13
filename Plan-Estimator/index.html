@@ -23,7 +23,8 @@
         <div class="row">
             <div class="col"></div>
             <div class="col d-flex justify-content-center">
-                <input class="input" id="vGoal">
+                <input class="input" id="vGoal" placeholder="Vendor Goal">
+                <input class="input" id="pGoal" placeholder="Pallet Goal">
             </div>
             <div class="col">
                 <button type="button" class="btn btn-primary" onclick="calc()">Submit</button>
@@ -88,7 +89,10 @@
                                             Time
                                         </th>
                                         <th class="text-center">
-                                            Units
+                                            PID
+                                        </th>
+                                        <th class="text-center">
+                                            Pallets
                                         </th>
                                     </tr>
                                 </thead>
@@ -102,10 +106,12 @@
                                         </td>
                 
                                     </tr>
+                                   
                                     <tr id='addr1'></tr>
                                 </tbody>
                             </table>
                         </div>
+                        
                
             </div>
             <div class="column">
