@@ -1,6 +1,6 @@
 .logo {
     width: 15vh;
-    margin: 1vh;
+    margin: 3vh;
     will-change: filter;
     transition: filter .2s ease-out;
 }
