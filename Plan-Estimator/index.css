@@ -49,4 +49,8 @@
     .column {
       width: 100%;
     }
+    #in{
+      min-width: 100vw;
+    }
   }
+
