@@ -10,8 +10,22 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header><a href="index.html"><img src="Amazon_logo.svg" alt="" class="logo"></a></header>
+    
+    <header>
+        <div class="row">
+        <div class="col"><a href="index.html"><img src="Amazon_logo.svg" alt="" class="logo"></a></div>
+        <div class="col">
+        <input type="checkbox" id="toggle" class="toggle--checkbox">
+        <label for="toggle" class="toggle--label">
+          <span class="toggle--label-background"></span>
+        </label>
+        <div class="background"></div>
+    </div>
+</div>
+    </header>
+    
     <hr>
+    
     <div class="container">
         <div class="row">
             <div class="col">
@@ -29,7 +43,7 @@
                 <input class="input" id="pGoal" placeholder="Pallet Goal">
             </div>
             <div class="col">
-                <button type="button" class="btn btn-primary" onclick="calc()">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="tog()">Submit</button>
             </div>
         </div>
     </div>
