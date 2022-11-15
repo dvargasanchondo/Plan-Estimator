@@ -378,7 +378,7 @@ for (var i = h; i < 18; ++i) {
     }
    
    
-    document.getElementById("test").innerHTML = tTisch.toString();
+    //document.getElementById("test").innerHTML = tTisch.toString();
   if (this.chart && this.chart != null) {
     this.chart.destroy()
   }
@@ -609,7 +609,7 @@ for (var i = h; i < 30; ++i) {
     }
    
    
-    document.getElementById("test").innerHTML = tTisch.toString();
+    //document.getElementById("test").innerHTML = tTisch.toString();
   if (this.chart && this.chart != null) {
     this.chart.destroy()
   }
